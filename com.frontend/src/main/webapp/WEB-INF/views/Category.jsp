@@ -18,11 +18,14 @@
 </tr>
 <tr>
 <td>Category name</td>
-<td> <input type="text" name="catname" id="catdesc"></td>
+<td> 
+<input type="text" name="catname" id="catdesc" /></td>
 </tr>
 <tr>
 <td>Category desc</td>
-<td> <textarea name="catdesc" id="catdesc"></textarea></td>
+
+<td> 
+<textarea name="catdesc" id="catdesc"></textarea></td>
 </tr>
 </table>
 <input type="submit" name="INSERT">
@@ -40,7 +43,7 @@
 	<td>${category.categoryName}</td>
 	<td>${category.categoryDesc}</td>
 	<td>
-		<a href="<c:url value='/editCategory/${category.categoryId}'/>">edit</a>/
+		<a href="<c:url value='/editCategory,${category.categoryId}'/>">edit</a>/
 		<a href="<c:url value='/deleteCategory/${category.categoryId}'/>">delete</a>
 	</td>
 	</tr>

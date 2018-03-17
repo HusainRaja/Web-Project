@@ -12,7 +12,8 @@
 <a href="Register">Register</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="AboutUs">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="ContactUs">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="Category">Category</a>
+<a href="Category">Category</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="Product">Product</a>
 </center>
 </body>
 </html>
