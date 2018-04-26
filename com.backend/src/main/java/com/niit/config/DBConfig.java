@@ -3,6 +3,7 @@ package com.niit.config;
 import java.util.Properties;
 
 
+
 import javax.sql.DataSource;
 
 import org.hibernate.SessionFactory;
@@ -27,7 +28,6 @@ import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.UserDetails;
 
-//@Repository
 @Configuration
 @EnableTransactionManagement
 public class DBConfig {
