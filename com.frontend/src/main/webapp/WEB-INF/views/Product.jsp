@@ -11,15 +11,22 @@
 </head>
 <body>
 <h1>This is the Product Page</h1>
-<spring:form action="addProduct" modelAttribute="Product" method="post">
-supplierId:<spring:input path="SupplierId"/><br/><br/>
-categoryId:<spring:input path="CategoryId"/><br/><br/>
-productName:<spring:input path="productName"/><br/><br/>
-productDesc:<spring:input path="productDesc"/><br/><br/>
-stock:<spring:input path="stock"/><br/><br/>
-price:<spring:input path="price"/><br/><br/>
+<spring:form action="addProduct" modelAttribute="Product" method="post" enctype="multipart/form-data">
+supplierId:<spring:input path="SupplierId"/><br/>
+product image:<spring:input type="file" path="pimage"/>
+category:
+<spring:select path="categoryId">
+<spring:option value="0" label="--select--"/>
+<spring:options items="${categoryList }"/>
+</spring:select>
+<br/>
+productName:<spring:input path="productName"/><br/>
+productDesc:<spring:input path="productDesc"/><br/>
+stock:<spring:input path="stock"/><br/>
+price:<spring:input path="price"/><br/>
 <button type="submit" class="btn">Add</button>
 </spring:form>
+<h3>${ErrorInfo }</h3>
 <table border="1px">
 <tr>
 <th>product ID</th>
